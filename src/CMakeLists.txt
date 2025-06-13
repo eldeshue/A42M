@@ -5,17 +5,6 @@ file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
   ${CMAKE_CURRENT_SOURCE_DIR}/*.cc
 )
 
-# 프로젝트가 실행 바이너리
-# add_executable(타겟실행파일이름 ${SRC_FILES})
-
-# 프로젝트가 정적 라이브러리
-# add_library(타겟라이브러리이름 STATIC ${SRC_FILES})
-# target_include_directories(타겟라이브러리이름
-#     PUBLIC
-#         ${PROJECT_SOURCE_DIR}/include      # 공개 헤더 (API)
-#     PRIVATE
-#         ${CMAKE_CURRENT_SOURCE_DIR}/lib    # 내부 전용 헤더
-# )
 add_library(a42m STATIC ${SRC_FILES})
 
 target_include_directories(a42m
