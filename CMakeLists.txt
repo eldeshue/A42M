@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.23)
 
 # project info
 project(
-  DefaultName
+  A42M
   VERSION 0.1
-  DESCRIPTION "Default cmake project description."
+  DESCRIPTION "Advanced Fourty-Two Math library."
   LANGUAGES CXX)
 
 # C++ compiler setting
